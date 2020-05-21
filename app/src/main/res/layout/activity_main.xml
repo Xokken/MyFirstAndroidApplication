@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD8080"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailMain"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="43dp"
+        android:background="#F6DDDD"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-6dp" />
+
+    <EditText
+        android:id="@+id/passwordMain"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="317dp"
+        android:background="#FAC9C9"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <Button
+        android:id="@+id/signMain"
+        android:layout_width="160dp"
+        android:layout_height="91dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="109dp"
+        android:text="sign in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordMain"
+        app:layout_constraintVertical_bias="1.0" />
+
+</RelativeLayout>
